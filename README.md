@@ -19,10 +19,19 @@ Arquivos que o .NET criou para mim:
 Este projeto demonstra como o tratamento de exceções em C# (try-catch) não é apenas uma ferramenta de segurança de código, mas um pilar fundamental da Experiência do Usuário (UX). 
 
 ## O que é o Try-Catch?
-No C#, o bloco try-catch é utilizado para lidar com exceções (erros que ocorrem durante a execução do programa). 
-try: Define um bloco de código onde "tentamos" executar algo que pode dar errado (ex: converter texto em número).
-catch: É o "plano de contingência". Se algo falhar no try, o programa pula para cá em vez de travar ("crashar").
-finally: Um bloco que sempre será executado, independentemente de ter ocorrido erro ou não, ideal para limpar recursos ou encerrar processos. 
+- No C#, o bloco try-catch é utilizado para lidar com exceções (erros que ocorrem durante a execução do programa). 
+- try: Define um bloco de código onde "tentamos" executar algo que pode dar errado (ex: converter texto em número).
+- catch: É o "plano de contingência". Se algo falhar no try, o programa pula para cá em vez de travar ("crashar").
+- finally: Um bloco que sempre será executado, independentemente de ter ocorrido erro ou não, ideal para limpar recursos ou encerrar processos. 
+
+## Conexão com IHC: Prevenção de Erros
+A 5ª Heurística de Nielsen afirma que um bom design deve, primeiro, tentar evitar que o erro ocorra. Mas, se ele ocorrer, o sistema deve oferecer mensagens de erro compreensíveis e uma saída amigável. 
+
+## Como este código aplica isso:
+- Evita a Frustração: Sem o try-catch, se o usuário digitasse "vinte" em vez de "20", o programa fecharia abruptamente com uma mensagem técnica incompreensível (Exception).
+- Feedback Amigável: No bloco catch, substituímos o erro técnico (System.FormatException) por uma linguagem que o ser humano entende: "Você digitou letras em um campo que só aceita números!".
+- Sugestão de Recuperação: Não basta dizer que errou; o código oferece uma DICA de como fazer o certo na próxima vez ("Ex: 25").
+- Estado Final Consistente: O uso do finally garante que o sistema dê um fechamento digno à operação, limpando as cores do console e informando que a tentativa foi encerrada. 
 
 ## 📸 Evidência de Execução
 
