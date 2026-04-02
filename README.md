@@ -13,10 +13,12 @@ Arquivos que o .NET criou para mim:
 1. `Program.cs`: Onde fica o código.
 2. `SistemaRobusto.csproj`: As configurações do meu projeto.
 
-🛡️ Try-Catch e a 5ª Heurística de Nielsen: Prevenção de Erros
+## 🛡️ Uso do Try-Catch
+
+## Try-Catch e a 5ª Heurística de Nielsen: Prevenção de Erros
 Este projeto demonstra como o tratamento de exceções em C# (try-catch) não é apenas uma ferramenta de segurança de código, mas um pilar fundamental da Experiência do Usuário (UX). 
 
-🧐 O que é o Try-Catch?
+## O que é o Try-Catch?
 No C#, o bloco try-catch é utilizado para lidar com exceções (erros que ocorrem durante a execução do programa). 
 try: Define um bloco de código onde "tentamos" executar algo que pode dar errado (ex: converter texto em número).
 catch: É o "plano de contingência". Se algo falhar no try, o programa pula para cá em vez de travar ("crashar").
